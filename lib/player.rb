@@ -21,11 +21,11 @@ class Player
       return
     end
 
-    def attack (player)
+    def attacks (player)
       puts "le joueur #{@name} attaque le joueur #{player.name}"
       damage = player.compute_damage
-      player.gets_damage(damage)
       puts "il lui inflige #{damage} points de dommages"
+      player.gets_damage(damage)
     end
 
     def compute_damage
